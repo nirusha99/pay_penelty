@@ -1,0 +1,47 @@
+<h2>Penalty Form</h2>
+
+<form [formGroup]="penaltyForm" (ngSubmit)="payPenalty()">
+  <div>
+    <label for="licenseNumber">License Number:</label>
+    <input type="text" id="licenseNumber" name="licenseNumber" formControlName="licenseNumber" readonly>
+  </div>
+
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" formControlName="name" readonly>
+  </div>
+
+  <div>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" formControlName="address" readonly>
+  </div>
+
+  <div>
+    <label for="nature">Nature of Penalty:</label>
+    <input type="text" id="nature" name="nature" formControlName="nature" readonly>
+  </div>
+
+  <div>
+    <label for="amount">Penalty Amount:</label>
+    <input type="text" id="amount" name="amount" formControlName="amount" readonly>
+  </div>
+
+  <!-- Include other penalty details form fields here -->
+
+  <div>
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" name="cardNumber" formControlName="cardNumber">
+  </div>
+
+  <div>
+    <label for="expiryDate">Expiry Date:</label>
+    <input type="text" id="expiryDate" name="expiryDate" formControlName="expiryDate">
+  </div>
+
+  <div>
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" formControlName="cvv">
+  </div>
+
+  <button type="submit">Pay Penalty</button>
+</form>

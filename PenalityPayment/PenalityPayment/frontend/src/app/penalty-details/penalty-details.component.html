@@ -1,0 +1,7 @@
+<h2>Penalty Details</h2>
+
+<div *ngIf="penalty">
+  <h3>{{ penalty.description }}</h3>
+  <p>{{ penalty.details }}</p>
+  <button (click)="redirectToPenaltyForm(penalty)">Edit Penalty</button>
+</div>

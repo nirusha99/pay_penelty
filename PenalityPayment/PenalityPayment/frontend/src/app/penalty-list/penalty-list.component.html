@@ -1,0 +1,7 @@
+<h2>Penalty List</h2>
+
+<ul>
+  <li *ngFor="let penalty of penalties">
+    <a (click)="viewPenaltyDetails(penalty)">{{ penalty.description }}</a>
+  </li>
+</ul>

@@ -1,0 +1,27 @@
+<form [formGroup]="penaltyForm" (ngSubmit)="submitForm()">
+  <div>
+    <label>Date:</label>
+    <input type="date" formControlName="date" />
+  </div>
+  <div>
+    <label>Penalty Description:</label>
+    <input type="text" formControlName="penaltyDescription" />
+  </div>
+  <div>
+    <label>Police Station:</label>
+    <input type="text" formControlName="policeStation" />
+  </div>
+  <div>
+    <label>Vehicle Number:</label>
+    <input type="text" formControlName="vehicleNumber" />
+  </div>
+  <div>
+    <label>Driving License:</label>
+    <input type="text" formControlName="drivingLicense" />
+  </div>
+  <div>
+    <label>Amount:</label>
+    <input type="number" formControlName="amount" />
+  </div>
+  <button type="submit" [disabled]="!penaltyForm.valid">Register Penalty</button>
+</form>

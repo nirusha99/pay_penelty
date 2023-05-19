@@ -1,0 +1,16 @@
+<h2>Police Registration Form</h2>
+<form [formGroup]="registrationForm" (ngSubmit)="submitForm()">
+  <div>
+    <label for="domain">Domain:</label>
+    <input type="text" id="domain" name="domain" formControlName="domain" required>
+  </div>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" formControlName="name" required>
+  </div>
+  <div>
+    <label for="idNumber">ID Number:</label>
+    <input type="text" id="idNumber" name="idNumber" formControlName="idNumber" required>
+  </div>
+  <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+</form>

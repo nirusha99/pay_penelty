@@ -1,0 +1,22 @@
+<h2>Penalty Sheet</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>License Number</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Nature of Penalty</th>
+      <th>Penalty Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let penalty of penalties">
+      <td>{{ penalty.licenseNumber }}</td>
+      <td>{{ penalty.name }}</td>
+      <td>{{ penalty.address }}</td>
+      <td>{{ penalty.nature }}</td>
+      <td>{{ penalty.amount }}</td>
+    </tr>
+  </tbody>
+</table>
